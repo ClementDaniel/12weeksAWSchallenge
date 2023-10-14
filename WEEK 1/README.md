@@ -1,3 +1,4 @@
+![image](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/0471f939-c42c-41b9-aea0-6f0e050f6036)
 
 # The Foundation Of AWS Services
 
@@ -53,7 +54,8 @@ For data analytics, you can leverage Amazon Redshift (a data warehousing service
 ### Conclusion
 AWS Core Services are the bedrock of Aws cloud computing, offering a wide range of capabilities to meet the diverse needs of businesses and developers. Whether you’re running a simple web application or building a complex data analytics platform, these services provide the scalability, reliability, and security required in the modern digital landscape.
 As AWS continues to innovate and expand its service offerings, the Core Services remain at the heart of the cloud ecosystem, empowering organizations to harness the full potential of cloud computing. Whether you’re just getting started with AWS or looking to optimize your existing cloud infrastructure, understanding and effectively utilizing these core services is crucial for your success in the cloud.
-Additional resources
-- https://aws.amazon.com/developer/language/net/services/
+
+
+- Additional resources https://aws.amazon.com/developer/language/net/services/
 - Follow me on medium https://medium.com/@daniel_clement
 
