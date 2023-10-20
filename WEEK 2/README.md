@@ -1,5 +1,5 @@
 # Using IAM as a strategy to secure Multi-account for small and medium businesses
-Discover AWS IAM for Small and Medium Businesses. Manage IT costs, enhance data security, and grow with the power of cloud computing
+### Discover AWS IAM for Small and Medium Businesses. Manage IT costs, enhance data security, and grow with the power of cloud computing
 ![Alt text](image-2.png)
 
 ## A Centralized Identity Management Service for AWS
