@@ -170,10 +170,10 @@ You can see that the S3 Bucket has been successfully created.
 ![Alt text](image-34.png)
 
 ## Use cases
-Startups: IAM Identity Center can help startups simplify their identity management and improve security as they grow.
-2. Enterprises: IAM Identity Center can help enterprises centrally manage workforce identities and access across all their AWS accounts and applications.
+-- Startups: IAM Identity Center can help startups simplify their identity management and improve security as they grow.
+-- Enterprises: IAM Identity Center can help enterprises centrally manage workforce identities and access across all their AWS accounts and applications.
 
-3. Managed service providers (MSPs): IAM Identity Center can help MSPs manage the identities and access of their customers’ AWS resources.
+-- Managed service providers (MSPs): IAM Identity Center can help MSPs manage the identities and access of their customers’ AWS resources.
 
 - Capital One: Capital One uses IAM Identity Center to manage access to AWS for over 100,000 employees. IAM Identity Center has helped Capital One to reduce administrative overhead and improve security.
 - GE Healthcare: GE Healthcare uses IAM Identity Center to manage access to AWS for over 50,000 employees. IAM Identity Center has helped GE Healthcare to improve security and reduce the risk of compliance violations.
@@ -219,4 +219,4 @@ aws.amazon.com
 
 - https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html
 
-- Follow me on LinkedIn: linkedin.com/in/danielclement1
+- Follow me on LinkedIn: https://linkedin.com/in/danielclement1
