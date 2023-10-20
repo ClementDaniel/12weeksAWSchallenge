@@ -47,7 +47,7 @@ When a workforce user signs in to the AWS access portal, they will be authentica
 ## How to get started with IAM Identity Center
 ![Alt text](image-3.png)
 
-###### Create an IAM Identity Center
+### Create an IAM Identity Center
 ![Alt text](image-4.png)
 
 Navigate to the IAM Identity Center service menu in the AWS Management Console and create an IAM Identity Center. Click the Enable button.
@@ -89,7 +89,7 @@ If you click Accept invitation in the invitation email, you will be taken to a s
 ![Alt text](image-13.png)
 
 
-###### Login to the AWS access portal
+### Login to the AWS access portal
 The IAM Identity Center User created above can login through the AWS access portal. Note: The AWS access portal exists separately from the AWS Managed Console
 
 If you click the AWS access portal URL in the IAM Identity Center Dashboard, .you can go to the AWS access portal screen.
@@ -101,7 +101,7 @@ Enter the Username and Password you created before and click the Sign in button.
 Since this is a new user, you do not have any applications yet. If you see a page similar to the screen below, you are logged in.
 ![Alt text](image-16.png)
 
-###### Creating Permission sets
+### Creating Permission sets
 Permission sets define the level of Access an IAM Identity Center User has to its assigned AWS Accounts. Permission sets appear as available roles in the AWS access portal. If you associate multiple permission sets with one IAM Identity Center User, you can select one of multiple permission sets after logging in.
 
 Select Permission sets from the left menu of IAM Identity Center and click the Create permission set button.
@@ -119,7 +119,7 @@ Enter S3FullAccessPermissionSet in the name of the permission set and click the 
 Check that all information is entered correctly, and click the Create button to create a permission set.
 ![Alt text](image-21.png)
 
-###### Create AWS accounts
+### Create AWS accounts
 The IAM Identity Center is tightly coupled with the AWS Organizations service. You can add AWS accounts to associate with IAM Identity Center users in the AWS Organizations service.
 
 Go to the AWS Organizations service screen to add a new AWS account. Select AWS accounts from the left menu, select Create an AWS account, enter your desired AWS account name and email address, and click the Create AWS account button.
@@ -131,7 +131,7 @@ A verification email will be sent to the email you entered when creating your AW
 If the AWS account is successfully created, you can see that a new AWS account has been created in AWS Organizations as shown in the screen below.
 ![Alt text](image-24.png)
 
-###### Associating IAM Identity Center Users with AWS accounts
+### Associating IAM Identity Center Users with AWS accounts
 Associate AWS accounts with an IAM Identity Center User.
 
 Select AWS accounts from the menu on the IAM Identity Center service screen, select the newly created account, and click the Assign users or groups button.
@@ -146,7 +146,7 @@ Select the S3 FullAccess Permission Set you made in advance and click the Next b
 Check that everything is correct, and click the Submit button.
 ![Alt text](image-28.png)
 
-###### Access the AWS access portal and check whether the permission set is applied
+### Access the AWS access portal and check whether the permission set is applied
 If you connect as an IAM Identity Center User in the AWS access portal, you can access the AWS account to which the permission set you just assigned is applied.
 
 In the AWS access portal, log in as the IAM Identity Center User created above.
