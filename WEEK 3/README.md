@@ -15,7 +15,7 @@ To understand AWS Networking better, it is helpful to think of it as a human bod
 - AWS Direct Connect: Direct Connect allows you to establish a dedicated network connection between your on-premises datacentre and AWS.
 - AWS Site-to-Site VPN: Site-to-Site VPN allows you to create a secure encrypted connection between your on-premises network and your VPC.
 - AWS Client VPN: Client VPN allows you to securely connect remote users to your VPC.
-Application Networking
+**Application Networking**
 - AWS Elastic Load Balancing (ELB): ELB distribute traffic across multiple instances of your application to improve performance and availability.
 - AWS App Mesh: App Mesh is a service mesh that helps you manage communications between microservices.
 - AWS Cloud Map: Cloud Map is a service discovery service that helps you manage and discover microservices.
