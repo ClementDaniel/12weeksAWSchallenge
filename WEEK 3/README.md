@@ -15,26 +15,31 @@ To understand AWS Networking better, it is helpful to think of it as a human bod
 - AWS Direct Connect: Direct Connect allows you to establish a dedicated network connection between your on-premises datacentre and AWS.
 - AWS Site-to-Site VPN: Site-to-Site VPN allows you to create a secure encrypted connection between your on-premises network and your VPC.
 - AWS Client VPN: Client VPN allows you to securely connect remote users to your VPC.
+
 **Application Networking**
 - AWS Elastic Load Balancing (ELB): ELB distribute traffic across multiple instances of your application to improve performance and availability.
 - AWS App Mesh: App Mesh is a service mesh that helps you manage communications between microservices.
 - AWS Cloud Map: Cloud Map is a service discovery service that helps you manage and discover microservices.
 - AWS Gateway Load Balancer: Gateway Load Balancer is a load balancer that helps you distribute traffic across multiple web services.
 - AWS API Gateway: API Gateway is a fully managed service that makes it easy to create, publish, maintain, monitor, and secure APIs at any scale.
+  
 **Edge Networking**
 - Amazon CloudFront: CloudFront is a content delivery network (CDN) that delivers your content to users with low latency and high performance.
 - AWS Route 53: Route 53 is a domain name system (DNS) web service that routes traffic to your websites and applications.
 - AWS Global Accelerator: Global Accelerator is a service that improves the performance and availability of your global applications.
+
 **Network Security**
 - AWS WAF: WAF is a web application firewall that helps you protect your web applications from common web attacks.
 - AWS Shield: Shield protects your applications from denial-of-service (DoS) and distributed denial-of-service (DDoS) attacks.
 - AWS Security Hub: Security Hub provides a comprehensive view of your security state across your AWS accounts.
 - AWS Inspector: Inspector analyses your applications for security vulnerabilities.
+
 **Hybrid Connectivity**
 - AWS Direct Connect: Direct Connect allows you to establish a dedicated network connection between your on-premises datacenter and AWS.
 - AWS Site-to-Site VPN: Site-to-Site VPN allows you to create a secure encrypted connection between your on-premises network and your VPC.
 - AWS Client VPN: Client VPN allows you to securely connect remote users to your VPC.
 - AWS VPN CloudHub: VPN CloudHub is a service that helps you connect your on-premises network to AWS through a third-party VPN provider.
+
 **Other Networking Services**
 - Amazon VPC Peering: VPC Peering allows you to connect two VPCs within the same AWS Region.
 - AWS Transit Gateway Connect: Transit Gateway Connect allows you to connect your Transit Gateway to a network outside of AWS.
