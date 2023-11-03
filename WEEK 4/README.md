@@ -135,4 +135,4 @@ AWS storage services offer a wide range of features and benefits, and they can b
 
 - https://docs.aws.amazon.com/whitepapers/latest/aws-overview/storage-services.html
 - https://aws.amazon.com/products/storage/
-- Follow me on linkedin.com/in/danielclement1
+- Follow me on https://linkedin.com/in/danielclement1
