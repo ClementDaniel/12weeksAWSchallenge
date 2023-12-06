@@ -38,7 +38,8 @@ python manage.py runserver
 ```
 If you visit http://127.0.0.1:8000 in a web browser, then you’ll see the default Django welcome screen:
 
-![](/Week7/images/Django-welcome-screen.png)
+![Django_2 1_landing_page](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/70c2c992-a3f7-4fd0-ab2a-6f053a481201)
+
 
 ### Step 2 - Preparing the application for deployment
 Let’s install these two packages in our virtual environment: WSGI server such as gunicorn and WhiteNoise as a simple yet scalable option for serving static files.
@@ -124,17 +125,20 @@ https://docs.github.com/en/migrations/importing-source-code/using-the-command-li
 
 ### step 4 -Creating and deploying the AWS App Runner service
 The following diagram outlines the steps for creating an App Runner service:
-![](/Week7/images/create-service-workflow.png)
+![Workflow-Rayn-blogs-1024x322](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/9e835995-6e7a-4421-8116-6c058042214b)
+
 1. Navigate to the **AWS App Runner service** in the AWS Management Console and choose **Create an App Runner service**
-   ![](/Week7/images/Apprunner1.png)
+   ![Capture](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/19903fbe-fc0c-4e89-be09-4e44c9126333)
+
 2. For Source, choose **Source code repository**
-   ![](/Week7/images/Apprunner2.png)
+  ![1](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/e9c53603-72be-43af-a398-a8065b04ea3c)
+
 3. Under **Connect to GitHub**, choose **Add new** and follow the instructions to connect to your GitHub account.
-   ![](/Week7/images/Apprunner3.png)
-   ![](/Week7/images/Apprunner4.png)
-   ![](/Week7/images/Apprunner5.png)
+![Capture 2](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/33843c9f-25eb-412a-981e-ee0f2c3fbc5c)
+
 4. For **Deployment settings**, choose **Automatic**
-   ![](/Week7/images/Apprunner6.png)
+  ![Capture 3](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/dcba3955-16c4-4345-ac4e-2b327f14a628)
+
 5. Choose Next.
 6. For **Build settings**, choose Use a configuration file. AWS App Runner automatically picks up the **apprunner.yaml** file stored in our repository.
     ![](/Week7/images/Apprunner7.png)
