@@ -1,14 +1,12 @@
 # Overview
-In this workshop, we will create a simple "To-do" web application with an API to store and retrieve tasks in a NoSQL cloud database. Machine learning is also intergrated to 
-automatically identify and label objects in images attached to tasks.
+We'll build a straightforward "To-do" web application in this session that uses an API to save and retrieve tasks from a NoSQL cloud database. Additionally, machine learning is integrated to recognize and annotate things in photos that are linked to tasks automatically.
 
-The AWS services used to build the application are AWS Lambda, Amazon API Gateway, Amazon DynamoDB, Amazon Simple Storage Service (S3), and AWS Amplify Console.   
-Amplify Console provides continuous deployment and hosting of the static web resources including HTML, CSS, JavaScript, and image files which are loaded in the user's browser. 
-JavaScript executed in the browser sends and receives data from a public backend API built using Lambda and API Gateway. DynamoDB provides a persistence layer where data can be stored 
-by the API's Lambda function. S3 is used to store uploaded images. Finally, Amazon Rekognition is used to detect and label objects in those images.  
+Amazon Lambda, Amazon API Gateway, Amazon DynamoDB, Amazon Simple Storage Service (S3), and AWS Amplify Console are the AWS services that were utilized in the development of the application.   
+The static web resources, which are loaded in the user's browser and include HTML, CSS, JavaScript, and image files, are continuously deployed and hosted by Amplify Console. 
+Data is sent and received from a public backend API created using Lambda and API Gateway by JavaScript running in the browser. The API's Lambda function can store data in a persistence layer made available by DynamoDB. Images that are uploaded are stored on S3. Lastly, items in those photos are identified and labeled using Amazon Rekognition.  
 
 
-![architecture](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/cd7ac64c-551a-4ea0-92ef-01f89dfb8951)
+![architecture] ![FZs5ExWXEAAnadm](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/35d0b2af-7dcf-428d-add5-1f62a0c8caae)
 
 # Step 0: Prerequisites
 First, create a new Cloud9 environment and open it up. Then, we need to install the `Node.js v16` version, which is compatible with this workshop and not use the preinstalled one on Cloud9.  
@@ -25,7 +23,8 @@ Then, set this version as the default Node.js version:
 ```bash
 nvm alias default 'lts/gallium'
 ```
-![im1](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/7ce6b8a9-ccfb-4b05-8e8a-b1924c0a5035)
+![im1] ![287259221-7ce6b8a9-ccfb-4b05-8e8a-b1924c0a5035](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/ff6fbc66-2cbe-4f6d-aab8-a049b8f3fbd1)
+
 Clone the git repo of this workshop with the following commands:
 ```bash
 cd ~/environment
@@ -217,15 +216,19 @@ Finally, run the following command to publish the app.
 amplify publish
 ```
 Browse to the resulting URL app:
-![im3](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/80b85257-dc45-469d-be34-00081c4a5103)
+![im3] ![287290529-80b85257-dc45-469d-be34-00081c4a5103](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/3e0a7a44-d1b8-42c2-adbc-5af8b327c3b4)
+
 Use any username and password to access the app since no authentication is configured in the backend.
-![im4](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/1ecd310a-55d8-4138-9af0-7c422f8aa3fd)
+![im4](![287291084-1ecd310a-55d8-4138-9af0-7c422f8aa3fd](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/2b72165d-6248-4122-96a5-7ae49f60787e)
+)
 
 # Step 4: Test the application
 Create a new task by providing a title and a body. 
-![im5](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/4450a33f-cb84-4a24-b3cb-2939fa83dc93)
+![im5](![287299713-4450a33f-cb84-4a24-b3cb-2939fa83dc93](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/99f1e05b-1012-4474-acfd-0caa42d0d18f)
+)
 You can view the same task from the DynamoBD table:
-![im6](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/7b800523-4a6c-4658-8727-ae2feea565f4)
+![im6](![287300611-7b800523-4a6c-4658-8727-ae2feea565f4](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/2609d17a-b4d1-4aa7-a6c4-a05d3f67ff3a)
+)
 
 # Step 5: Configure image metadata extraction
 In this step, we will add a feature to detect objects in an uploaded image and apply labels to the detected objects.  
@@ -356,9 +359,8 @@ sam build
 sam deploy
 ```
 Let's test our app by uplaoding this image file as an attachement to a task.
-![photo7](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/8ebd2f2a-6dcd-485a-96e1-a5f3f4fcd627)
-Shortly after, detected labels would be added.
-![im7](https://github.com/xhelma/12weekawsworkshopchallenge/assets/97184575/768d9785-3d6e-433a-8e86-5ce4308447e0)
+![photo7] ![download](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/c1612671-1c0d-487a-9e18-60ec91aee5d5)
+
 
 
 
