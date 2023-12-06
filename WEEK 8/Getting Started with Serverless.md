@@ -6,7 +6,7 @@ The static web resources, which are loaded in the user's browser and include HTM
 Data is sent and received from a public backend API created using Lambda and API Gateway by JavaScript running in the browser. The API's Lambda function can store data in a persistence layer made available by DynamoDB. Images that are uploaded are stored on S3. Lastly, items in those photos are identified and labeled using Amazon Rekognition.  
 
 
-![architecture] ![FZs5ExWXEAAnadm](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/35d0b2af-7dcf-428d-add5-1f62a0c8caae)
+ ![FZs5ExWXEAAnadm](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/35d0b2af-7dcf-428d-add5-1f62a0c8caae)
 
 # Step 0: Prerequisites
 First, create a new Cloud9 environment and open it up. Then, we need to install the `Node.js v16` version, which is compatible with this workshop and not use the preinstalled one on Cloud9.  
@@ -219,15 +219,15 @@ Browse to the resulting URL app:
 ![im3] ![287290529-80b85257-dc45-469d-be34-00081c4a5103](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/3e0a7a44-d1b8-42c2-adbc-5af8b327c3b4)
 
 Use any username and password to access the app since no authentication is configured in the backend.
-![im4](![287291084-1ecd310a-55d8-4138-9af0-7c422f8aa3fd](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/2b72165d-6248-4122-96a5-7ae49f60787e)
+(![287291084-1ecd310a-55d8-4138-9af0-7c422f8aa3fd](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/2b72165d-6248-4122-96a5-7ae49f60787e)
 )
 
 # Step 4: Test the application
 Create a new task by providing a title and a body. 
-![im5](![287299713-4450a33f-cb84-4a24-b3cb-2939fa83dc93](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/99f1e05b-1012-4474-acfd-0caa42d0d18f)
+(![287299713-4450a33f-cb84-4a24-b3cb-2939fa83dc93](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/99f1e05b-1012-4474-acfd-0caa42d0d18f)
 )
 You can view the same task from the DynamoBD table:
-![im6](![287300611-7b800523-4a6c-4658-8727-ae2feea565f4](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/2609d17a-b4d1-4aa7-a6c4-a05d3f67ff3a)
+(![287300611-7b800523-4a6c-4658-8727-ae2feea565f4](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/2609d17a-b4d1-4aa7-a6c4-a05d3f67ff3a)
 )
 
 # Step 5: Configure image metadata extraction
@@ -359,7 +359,7 @@ sam build
 sam deploy
 ```
 Let's test our app by uplaoding this image file as an attachement to a task.
-![photo7] ![download](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/c1612671-1c0d-487a-9e18-60ec91aee5d5)
+ ![download](https://github.com/ClementDaniel/12weeksAWSchallenge/assets/96403532/c1612671-1c0d-487a-9e18-60ec91aee5d5)
 
 
 
