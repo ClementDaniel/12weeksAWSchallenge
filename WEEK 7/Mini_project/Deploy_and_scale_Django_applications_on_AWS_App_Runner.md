@@ -1,19 +1,18 @@
 # Deploy and scale Django applications on AWS App Runner
-This tutorial covers how you can use AWS App Runner to deploy your application to an App Runner service. It shows how to deploy and scale a Django web application on AWS App Runner and how to securely connect to a managed database with Amazon Relational Database Service (Amazon RDS) for PostgreSQL.It walks through configuring the source code and deployment, the service build, and the service runtime.
+This explains how to deploy your application to an App Runner service using AWS App Runner. It demonstrates how to use Amazon Relational Database Service (Amazon RDS) for PostgreSQL to securely connect to a managed database and how to scale and publish a Django web application on AWS App Runner.It guides you through configuring the service build, service runtime, and source code deployment.
 ## Django
-Django is a high-level Python web framework that enables developers to build robust, scalable, and secure web applications quickly and efficiently. It follows the model-view-controller (MVC) architectural pattern and emphasizes the principle of "Don't Repeat Yourself" (DRY), promoting clean and reusable code.
-Django is an open-source web application framework written in Python. It has many built-in features such as an object-relational mapper (ORM), URL routing, authentication system, templating system, and more, it is a popular choice for developing web applications and APIs.
+With the help of the high-level Python web framework Django, developers can create safe, scalable, and reliable online applications fast and effectively. It adheres to the model-view-controller (MVC) architectural design and promotes clean, reusable code by highlighting the "Don't Repeat Yourself" (DRY) philosophy.
+Python-based Django is an open-source framework for web applications. It is a well-liked option for creating online applications and APIs because of its many built-in capabilities, which include an object-relational mapper (ORM), URL routing, authentication system, templating system, and more.
 ## AWS App Runner
-AWS App Runner makes it easy to deploy Django applications directly from a source code repository or container image. AWS App Runner provisions resources, automatically scales the number of containers up or down to meet the needs of your application, and load balances traffic to ensure high availability.
+Deploying Django apps straight from a source code repository or container image is made simple by AWS App Runner. In order to guarantee high availability, Amazon App Runner loads resources, dynamically scales the number of containers up or down to match the demands of your application, and load balances traffic.
 ## Solution Architecture
 
 ![](/Week7/images/Project-overview.png)
 
-The solution you are going to set up as part of this walkthrough comprises the following elements as shown in the architecture diagram:
-* An AWS App Runner service running your Django application in an AWS-managed VPC.
-* An RDS for PostgreSQL database instance running in your own customer-managed VPC. App Runner privately connects to the RDS instance using AWS PrivateLink.
-* AWS Secrets Manager to securely store and access the database secret from App Runner.
-* A GitHub repository from which the Django application source code will be deployed.
+The architecture diagram below illustrates the components of the solution you will build up throughout this walkthrough:
+* An RDS for PostgreSQL database instance operating in a VPC that is managed by you, the customer
+* Your Django application running in an AWS-managed VPC via the AWS App Runner service. App Runner connects to the RDS instance in private via AWS PrivateLink.
+* The Django application source code will be deployed from a GitHub repository; the database secret from App Runner will be securely stored and retrieved using AWS Secrets Manager.
 
 ## Walkthrough
 ### Step 1 - Setting up a sample Django project
@@ -123,7 +122,6 @@ staticfiles
 Initialize a new Git repository in the **django-apprunner/myproject** directory and push it to GitHub. Follow the below link for instructions on working with GitHub.
 https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
 
-**My GitHub repo:** https://github.com/Sudarkodi-Muthiah-repo/Django_on_aws_apprunner
 ### step 4 -Creating and deploying the AWS App Runner service
 The following diagram outlines the steps for creating an App Runner service:
 ![](/Week7/images/create-service-workflow.png)
@@ -349,12 +347,12 @@ run:
 Finally, push all updates to GitHub. Because you have automated deployments from GitHub enabled, AWS App Runner redeploys your service and your Django application connects to the PostgreSQL database.
 
 ### Considerations for scaling Django on AWS App Runner
-You have successfully deployed your Django application to an autoscaling compute layer with AWS App Runner and connected to a managed PostgreSQL database with Amazon RDS for PostgreSQL. 
-AWS App Runner automatically scales compute resources for your AWS App Runner service up and down based on its autoscaling configuration. This configuration defines the minimum and maximum number of provisioned instances for your service as the min size and max size. AWS App Runner increases and decreases the number of instances within this range based on the maximum number of concurrent requests per instance, the max concurrency. When the number of concurrent requests exceeds this limit, AWS App Runner scales up the service.
+With the help of AWS App Runner and Amazon RDS for PostgreSQL, you have successfully deployed your Django application to an autoscaling computing layer and established a connection to a managed PostgreSQL database. 
+Your AWS App Runner service's compute resources are automatically scaled up or down by AWS App Runner according to its autoscaling configuration. The min size and max size parameters in this setup specify the lowest and maximum number of provisioned instances for your service. Based on the maximum number of concurrent requests per instance, or max concurrency, AWS App Runner modifies the number of instances within this range. AWS App Runner scales up the service when the quantity of concurrent requests above this threshold.
 
-You can adjust the per-instance CPU and memory configuration for your AWS App Runner service from 0.25 vCPUs and 0.5 GB of RAM to 4 vCPUs and 12 GB of RAM, respectively. To run your application efficiently on AWS App Runner, adjust both the CPU and memory configuration and the max concurrency to fit your workload’s requirements and use load testing to validate your setup.
+For your AWS App Runner service, you can change the per-instance CPU and memory configuration from 0.25 vCPUs and 0.5 GB of RAM to 4 vCPUs and 12 GB of RAM, respectively. Utilize load testing to verify your configuration and modify the CPU, RAM, and max concurrency settings to meet the demands of your workload in order to run your application on AWS App Runner as effectively as possible.
 
-AWS App Runner uses AWS Fargate as the underlying compute engine to deploy instances of your application.
+AWS App Runner deploys instances of your application using AWS Fargate as the underlying compute engine.
 
 ### Cleaning up
 To avoid incurring charges, delete any resources you created as part of this walkthrough that you no longer need:
